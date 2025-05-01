@@ -117,7 +117,6 @@ function AddLearningPlan() {
       setIsSubmitting(false);
     }
   };
-
 // Function to convert a YouTube video URL into an embeddable URL
 const getEmbedURL = (url) => {
   try {

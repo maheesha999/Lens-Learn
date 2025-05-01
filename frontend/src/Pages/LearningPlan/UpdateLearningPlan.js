@@ -50,28 +50,19 @@ function UpdateLearningPost() {
     fetchPost();
     
     // Cleanup function to revoke object URLs when component unmounts
-   // Clean-up function inside a useEffect (assumed from context)
-return () => {
-  // If there is a generated image preview URL, revoke it to free up memory
-  if (imagePreview) {
-    URL.revokeObjectURL(imagePreview);
-  }
-};
-// The dependency array is [id], meaning this effect runs when 'id' changes or component unmounts
-}, [id]);
+    return () => {
+      if (imagePreview) {
+        URL.revokeObjectURL(imagePreview);
+      }
+    };
+  }, [id]);
 
-// Function to add a new tag
-const handleAddTag = () => {
-  // Check if the tag input is not just empty spaces
-  if (tagInput.trim() !== '') {
-    // Add the new tag to the existing list of tags
-    setTags([...tags, tagInput.trim()]);
-    
-    // Clear the tag input field after adding
-    setTagInput('');
-  }
-};
-
+  const handleAddTag = () => {
+    if (tagInput.trim() !== '') {
+      setTags([...tags, tagInput.trim()]);
+      setTagInput('');
+    }
+  };
 
   const handleDeleteTag = (index) => {
     const updatedTags = tags.filter((_, i) => i !== index);

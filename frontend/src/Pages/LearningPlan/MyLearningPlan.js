@@ -29,25 +29,18 @@ function MyLearningPlan() {
     fetchPosts();
   }, []);
 
-  // Function to handle search input changes
-const handleSearch = (e) => {
-  // Get the search query entered by the user, and convert it to lowercase for case-insensitive matching
-  const query = e.target.value.toLowerCase();
-  
-  // Update the search query state
-  setSearchQuery(query);
+  const handleSearch = (e) => {
+    const query = e.target.value.toLowerCase();
+    setSearchQuery(query);
 
-  // Filter the posts based on the search query
-  const filtered = posts.filter(
-    (post) =>
-      post.title.toLowerCase().includes(query) ||            // Check if the title matches
-      post.description.toLowerCase().includes(query) ||      // Check if the description matches
-      (post.category && post.category.toLowerCase().includes(query)) // Check if the category matches (if it exists)
-  );
-
-  // Update the state with the filtered posts
-  setFilteredPosts(filtered);
-};
+    const filtered = posts.filter(
+      (post) =>
+        post.title.toLowerCase().includes(query) ||
+        post.description.toLowerCase().includes(query) ||
+        (post.category && post.category.toLowerCase().includes(query))
+    );
+    setFilteredPosts(filtered);
+  };
 
   const getEmbedURL = (url) => {
     try {

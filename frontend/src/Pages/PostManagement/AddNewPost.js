@@ -35,35 +35,21 @@ function AddNewPost() {
         videoCount++;
 
         // Validate video duration
-    // Create a video element dynamically
-const video = document.createElement('video');
+        const video = document.createElement('video');
+        video.preload = 'metadata';
+        video.src = URL.createObjectURL(file);
 
-// Set video to preload only metadata (not the full video) to quickly get duration
-video.preload = 'metadata';
-
-// Create a temporary URL for the uploaded video file
-video.src = URL.createObjectURL(file);
-
-// When the video's metadata (like duration) has loaded
-video.onloadedmetadata = () => {
-  // Revoke the temporary object URL to free up memory
-  URL.revokeObjectURL(video.src);
-
-  // Check if the video's duration is more than 30 seconds
-  if (video.duration > 30) {
-    // Alert the user that the video is too long
-    alert(`Video ${file.name} exceeds the maximum duration of 30 seconds.`);
-
-    // Reload the page to reset the file upload (you might improve this part later)
-    window.location.reload();
-  }
-};
-} else {
-  // If the uploaded file is not a supported type, alert the user
-  alert(`Unsupported file type: ${file.type}`);
-  return; // Exit the function
-}
-
+        video.onloadedmetadata = () => {
+          URL.revokeObjectURL(video.src);
+          if (video.duration > 30) {
+            alert(`Video ${file.name} exceeds the maximum duration of 30 seconds.`);
+            window.location.reload();
+          }
+        };
+      } else {
+        alert(`Unsupported file type: ${file.type}`);
+        return;
+      }
 
       // Add file preview object with type and URL
       previews.push({ type: file.type, url: URL.createObjectURL(file) });

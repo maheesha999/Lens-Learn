@@ -100,7 +100,7 @@ function AllLearningPlan() {
                     onClick={() => handleUpdate(post.id)}    // When clicked, call the handleUpdate function with the post ID
                     className='action_btn_icon'              // Class for styling
                     style={{
-                      color: '#4285F4',                      // Set icon color to blue
+                      color: '#4285F4',                    
                       cursor: 'pointer',                     // Change cursor to pointer on hover
                       fontSize: '38px',                      // Icon size (increased to 38px)
                       transition: 'transform 0.2s',           // Smooth transition when scaling
