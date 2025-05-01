@@ -102,7 +102,7 @@ function AllLearningPlan() {
                     style={{
                       color: '#4285F4',                    
                       cursor: 'pointer',                     // Change cursor to pointer on hover
-                      fontSize: '38px',                      // Icon size (increased to 38px)
+                      fontSize: '38px',  //font size                    // Icon size (increased to 38px)
                       transition: 'transform 0.2s',           // Smooth transition when scaling
                       padding: '6px',                        // Padding inside icon button
                       borderRadius: '50%',                   // Make the button circular
