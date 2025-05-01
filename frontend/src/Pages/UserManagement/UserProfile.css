@@ -253,7 +253,7 @@
 .profile-cover-section {
     position: relative;
     height: 150px;
-    background: linear-gradient(135deg, #a9c9ff 0%, #ffbbec 100%);
+    background: linear-gradient(135deg, rgba(6, 118, 120, 0.7),rgba(8, 8, 77, 0.8) );
     border-radius: 15px;
     margin-bottom: 60px;
 }

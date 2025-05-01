@@ -90,25 +90,20 @@ function AllLearningPlan() {
                   }}>{post.postOwnerName}</p>
                 </div>
               </div>
-              {/*// Check if the current user is the owner of the post */}
               {post.postOwnerID === localStorage.getItem('userID') && (
-                  // If true, show the action buttons (like Edit)
-                <div className='action_btn_icon_post' style={{ display: 'flex', gap: '15px' }}> 
-
-                    {/* Edit Icon Button */}
+                <div className='action_btn_icon_post' style={{ display: 'flex', gap: '15px' }}>
                   <FaEdit
-                    onClick={() => handleUpdate(post.id)}    // When clicked, call the handleUpdate function with the post ID
-                    className='action_btn_icon'              // Class for styling
+                    onClick={() => handleUpdate(post.id)} 
+                    className='action_btn_icon'
                     style={{
-                      color: '#4285F4',                    
-                      cursor: 'pointer',                     // Change cursor to pointer on hover
-                      fontSize: '38px',  //font size                    // Icon size (increased to 38px)
-                      transition: 'transform 0.2s',           // Smooth transition when scaling
-                      padding: '6px',                        // Padding inside icon button
-                      borderRadius: '50%',                   // Make the button circular
-                      backgroundColor: 'rgba(66, 133, 244, 0.1)' // Light blue background color
+                      color: '#4285F4',
+                      cursor: 'pointer',
+                      fontSize: '38px', // Increased from 28px to 38px
+                      transition: 'transform 0.2s',
+                      padding: '6px', // Reduced from 15px to 6px
+                      borderRadius: '50%',
+                      backgroundColor: 'rgba(66, 133, 244, 0.1)'
                     }}
-                    
                     onMouseOver={(e) => {
                       e.target.style.transform = 'scale(1.1)';
                     }}
@@ -536,7 +531,7 @@ function AllLearningPlan() {
       <div className='continer' style={{ 
         position: 'relative',
         minHeight: '100vh',
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#0a1f44',
         paddingBottom: '50px',
         paddingTop: '20px'
       }}>
@@ -546,7 +541,7 @@ function AllLearningPlan() {
           left: 0, 
           width: '100%', 
           height: '100%', 
-          background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8))', 
+          background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', 
           zIndex: 1 
         }}></div>
         

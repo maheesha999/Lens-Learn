@@ -38,7 +38,7 @@ function UserLogin() {
 
   return (
     <div className="login-container" style={{ backgroundImage: 'url(./img/photography-beautiful.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-      <div className="gradient-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8))', zIndex: 1 }}></div>
+      <div className="gradient-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', zIndex: 1 }}></div>
         <div className="login-box" style={{ position: 'relative', zIndex: 2, backgroundColor: 'rgba(255, 255, 255, 0.9)', padding: '40px', borderRadius: '15px', maxWidth: '400px', width: '100%', textAlign: 'center', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' }}>
           <h1 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>Welcome  to <br/> Lens Learn</h1>
           <p style={{ fontSize: '16px', marginBottom: '30px', color: '#555' }}>Log in to explore and share your photography journey</p>

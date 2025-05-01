@@ -27,24 +27,14 @@ function NotificationsPage() {
     }
   }, [userId]);
 
- // Function to mark a notification as "read"
-const handleMarkAsRead = async (id) => {
-  try {
-    // Send a PUT request to the backend to mark the notification as read
-    await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
-
-    // After successful update, update the local notifications state
-    setNotifications(
-      notifications.map((n) =>
-        n.id === id ? { ...n, read: true } : n // If notification ID matches, update its 'read' status to true
-      )
-    );
-  } catch (error) {
-    // Handle errors by logging them in the console
-    console.error('Error marking notification as read:', error);
-  }
-};
-
+  const handleMarkAsRead = async (id) => {
+    try {
+      await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
+      setNotifications(notifications.map((n) => (n.id === id ? { ...n, read: true } : n)));
+    } catch (error) {
+      console.error('Error marking notification as read:', error);
+    }
+  };
 
   const handleDelete = async (id) => {
     try {
@@ -59,7 +49,7 @@ const handleMarkAsRead = async (id) => {
     <div className="add-post-container" style={{ 
       position: 'relative', 
       minHeight: '100vh',
-      backgroundColor: '#f9f9f9',
+      backgroundColor: '#0a1f44',
       paddingBottom: '50px',
       paddingTop: '20px'
     }}>
@@ -69,7 +59,7 @@ const handleMarkAsRead = async (id) => {
         left: 0, 
         width: '100%', 
         height: '100%', 
-        background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.1), rgba(219, 112, 147, 0.2))', 
+        background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', 
         zIndex: 1 
       }}></div>
       
@@ -91,7 +81,7 @@ const handleMarkAsRead = async (id) => {
         }}>
           <h1 className="post-form-title" style={{ 
             color: '#333', 
-            borderBottom: '2px solid #FF6F61', 
+            borderBottom: '2px solid #000000', 
             paddingBottom: '10px',
             fontSize: '28px',
             fontWeight: 'bold',
