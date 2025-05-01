@@ -206,7 +206,7 @@ function UpdateLearningPost() {
               color: 'white',
               border: 'none',
               borderRadius: '50%',
-              width: '25px',
+              width: '25px', //width
               height: '25px',
               display: 'flex',
               alignItems: 'center',

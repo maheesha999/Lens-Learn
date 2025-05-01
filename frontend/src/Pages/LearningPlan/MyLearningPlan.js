@@ -114,7 +114,7 @@ function MyLearningPlan() {
                     style={{
                       color: '#4285F4',
                       cursor: 'pointer',
-                      fontSize: '38px',
+                      fontSize: '38px', //fontsize
                       transition: 'transform 0.2s',
                       padding: '10px',
                       borderRadius: '50%',
