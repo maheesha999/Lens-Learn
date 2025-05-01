@@ -187,7 +187,7 @@ function UpdateLearningPost() {
             alt="Preview"
             style={{
         
-              maxHeight: '200px',
+              maxHeight: '200px',//height
               display: 'block'
             }}
           />
