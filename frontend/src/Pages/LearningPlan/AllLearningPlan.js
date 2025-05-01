@@ -90,20 +90,25 @@ function AllLearningPlan() {
                   }}>{post.postOwnerName}</p>
                 </div>
               </div>
+              {/*// Check if the current user is the owner of the post */}
               {post.postOwnerID === localStorage.getItem('userID') && (
-                <div className='action_btn_icon_post' style={{ display: 'flex', gap: '15px' }}>
+                  // If true, show the action buttons (like Edit)
+                <div className='action_btn_icon_post' style={{ display: 'flex', gap: '15px' }}> 
+
+                    {/* Edit Icon Button */}
                   <FaEdit
-                    onClick={() => handleUpdate(post.id)} 
-                    className='action_btn_icon'
+                    onClick={() => handleUpdate(post.id)}    // When clicked, call the handleUpdate function with the post ID
+                    className='action_btn_icon'              // Class for styling
                     style={{
-                      color: '#4285F4',
-                      cursor: 'pointer',
-                      fontSize: '38px', // Increased from 28px to 38px
-                      transition: 'transform 0.2s',
-                      padding: '6px', // Reduced from 15px to 6px
-                      borderRadius: '50%',
-                      backgroundColor: 'rgba(66, 133, 244, 0.1)'
+                      color: '#4285F4',                      // Set icon color to blue
+                      cursor: 'pointer',                     // Change cursor to pointer on hover
+                      fontSize: '38px',                      // Icon size (increased to 38px)
+                      transition: 'transform 0.2s',           // Smooth transition when scaling
+                      padding: '6px',                        // Padding inside icon button
+                      borderRadius: '50%',                   // Make the button circular
+                      backgroundColor: 'rgba(66, 133, 244, 0.1)' // Light blue background color
                     }}
+                    
                     onMouseOver={(e) => {
                       e.target.style.transform = 'scale(1.1)';
                     }}

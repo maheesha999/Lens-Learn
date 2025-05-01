@@ -27,14 +27,24 @@ function NotificationsPage() {
     }
   }, [userId]);
 
-  const handleMarkAsRead = async (id) => {
-    try {
-      await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
-      setNotifications(notifications.map((n) => (n.id === id ? { ...n, read: true } : n)));
-    } catch (error) {
-      console.error('Error marking notification as read:', error);
-    }
-  };
+ // Function to mark a notification as "read"
+const handleMarkAsRead = async (id) => {
+  try {
+    // Send a PUT request to the backend to mark the notification as read
+    await axios.put(`http://localhost:8080/notifications/${id}/markAsRead`);
+
+    // After successful update, update the local notifications state
+    setNotifications(
+      notifications.map((n) =>
+        n.id === id ? { ...n, read: true } : n // If notification ID matches, update its 'read' status to true
+      )
+    );
+  } catch (error) {
+    // Handle errors by logging them in the console
+    console.error('Error marking notification as read:', error);
+  }
+};
+
 
   const handleDelete = async (id) => {
     try {
