@@ -49,7 +49,6 @@ function UpdateLearningPost() {
 
     fetchPost();
     
-    // Cleanup function to revoke object URLs when component unmounts
    // Clean-up function inside a useEffect (assumed from context)
 return () => {
   // If there is a generated image preview URL, revoke it to free up memory

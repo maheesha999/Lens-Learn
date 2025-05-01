@@ -34,7 +34,6 @@ const handleSearch = (e) => {
   // Get the search query entered by the user, and convert it to lowercase for case-insensitive matching
   const query = e.target.value.toLowerCase();
   
-  // Update the search query state
   setSearchQuery(query);
 
   // Filter the posts based on the search query
