@@ -93,7 +93,7 @@ function MyLearningPlan() {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              marginBottom: '15px',//bottom
+              marginBottom: '15px',
               borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
               paddingBottom: '10px'
             }}>
@@ -547,7 +547,7 @@ function MyLearningPlan() {
           left: 0, 
           width: '100%', 
           height: '100%', 
-          background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8))', 
+          background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', 
           zIndex: 1 
         }}></div>
         

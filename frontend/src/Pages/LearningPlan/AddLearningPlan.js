@@ -103,7 +103,7 @@ function AddLearningPlan() {
         templateID,
         startDate, // New field
         endDate,   // New field
-        category  
+        category   // New field
       };
 
       // Submit the post data
@@ -117,29 +117,23 @@ function AddLearningPlan() {
       setIsSubmitting(false);
     }
   };
-// Function to convert a YouTube video URL into an embeddable URL
-const getEmbedURL = (url) => {
-  try {
-    // Check if the URL is a standard YouTube video link (e.g., https://www.youtube.com/watch?v=videoId)
-    if (url.includes('youtube.com/watch')) {
-      const videoId = new URL(url).searchParams.get('v'); // Extract the 'v' query parameter (video ID)
-      return `https://www.youtube.com/embed/${videoId}`;   // Return the embeddable URL
+
+  const getEmbedURL = (url) => {
+    try {
+      if (url.includes('youtube.com/watch')) {
+        const videoId = new URL(url).searchParams.get('v');
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+      if (url.includes('youtu.be/')) {
+        const videoId = url.split('youtu.be/')[1];
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+      return url; // Return the original URL if it's not a YouTube link
+    } catch (error) {
+      console.error('Invalid URL:', url);
+      return ''; // Return an empty string for invalid URLs
     }
-
-    // Check if the URL is a shortened YouTube link (e.g., https://youtu.be/videoId)
-    if (url.includes('youtu.be/')) {
-      const videoId = url.split('youtu.be/')[1];           // Extract the video ID after 'youtu.be/'
-      return `https://www.youtube.com/embed/${videoId}`;   // Return the embeddable URL
-    }
-
-    // If the URL is not a YouTube link, return it as it is
-    return url;
-  } catch (error) {
-    console.error('Invalid URL:', url); // Log error if URL parsing fails
-    return ''; // Return empty string for invalid or corrupted URLs
-  }
-};
-
+  };
 
   return (
     <div className="add-post-container" style={{

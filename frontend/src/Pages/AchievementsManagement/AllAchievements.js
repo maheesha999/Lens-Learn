@@ -72,7 +72,7 @@ function AllAchievements() {
       <div className='continer' style={{ 
         position: 'relative',
         minHeight: '100vh',
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#0a1f44',
         paddingBottom: '50px',
         paddingTop: '20px'
       }}>
@@ -82,7 +82,7 @@ function AllAchievements() {
           left: 0, 
           width: '100%', 
           height: '100%', 
-          background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8))', 
+          background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', 
           zIndex: 1 
         }}></div>
         
