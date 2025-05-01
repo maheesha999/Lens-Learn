@@ -103,7 +103,7 @@ function AddLearningPlan() {
         templateID,
         startDate, // New field
         endDate,   // New field
-        category   // New field
+        category  
       };
 
       // Submit the post data
