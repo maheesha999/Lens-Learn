@@ -98,7 +98,7 @@ function UpdateUserProfile() {
         left: 0, 
         width: '100%', 
         height: '100%', 
-        background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8))', 
+        background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', 
         zIndex: 1 
       }}></div>
       
@@ -368,31 +368,32 @@ function UpdateUserProfile() {
                     onChange={handleProfilePictureChange}
                     style={{ display: 'none' }}
                   />
-                  <label htmlFor="profile-upload" style={{
-                    backgroundColor: '#4285F4',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '8px',
-                    padding: '12px 20px',
-                    fontSize: '16px',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 4px 8px rgba(66, 133, 244, 0.3)',
-                    display: 'inline-block',
-                    fontWeight: 'bold'
-                  }}
-                  onMouseOver={(e) => {
-                    e.style.backgroundColor = '#3367D6';
-                    e.style.transform = 'translateY(-2px)';
-                    e.style.boxShadow = '0 6px 14px rgba(66, 133, 244, 0.4)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.style.backgroundColor = '#4285F4';
-                    e.style.transform = 'translateY(0)';
-                    e.style.boxShadow = '0 4px 8px rgba(66, 133, 244, 0.3)';
-                  }}>
-                    Choose New Picture
-                  </label>
+                <label htmlFor="profile-upload" style={{
+  backgroundColor: '#4285F4',
+  color: '#fff',
+  border: 'none',
+  borderRadius: '8px',
+  padding: '12px 20px',
+  fontSize: '16px',
+  cursor: 'pointer',
+  transition: 'all 0.3s ease',
+  boxShadow: '0 4px 8px rgba(66, 133, 244, 0.3)',
+  display: 'inline-block',
+  fontWeight: 'bold'
+}}
+onMouseOver={(e) => {
+  e.target.style.backgroundColor = '#3367D6';
+  e.target.style.transform = 'translateY(-2px)';
+  e.target.style.boxShadow = '0 6px 14px rgba(66, 133, 244, 0.4)';
+}}
+onMouseOut={(e) => {
+  e.target.style.backgroundColor = '#4285F4';
+  e.target.style.transform = 'translateY(0)';
+  e.target.style.boxShadow = '0 4px 8px rgba(66, 133, 244, 0.3)';
+}}>
+  Choose New Picture
+</label>
+
                 </div>
               </div>
             </div>

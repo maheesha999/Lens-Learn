@@ -93,7 +93,7 @@ function App() {
             }
           />
           <Route
-            path="/updateUserProfile/:id"
+            path="/updateProfile/:id"
             element={
               <ProtectedRoute>
                 <UpdateUserProfile />

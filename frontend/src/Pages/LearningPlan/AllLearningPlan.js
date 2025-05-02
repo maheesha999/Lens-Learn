@@ -494,7 +494,7 @@ function AllLearningPlan() {
             <p className='template_description' style={{ 
               whiteSpace: "pre-line",
               color: '#555',
-              fontSize: '16px', //fontsize
+              fontSize: '16px',
               lineHeight: '1.6',
               marginBottom: '10px'
             }}>{post.description}</p>
