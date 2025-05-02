@@ -476,7 +476,7 @@ function AllLearningPlan() {
             <p className='template_dates' style={{ 
               color: '#555',
               fontSize: '16px',
-              marginBottom: '10px',//margin
+              marginBottom: '10px',
               display: 'flex',
               alignItems: 'center',
               gap: '5px'
@@ -539,7 +539,7 @@ function AllLearningPlan() {
           position: 'absolute', 
           top: 0, 
           left: 0, 
-          width: '100%', 
+          width: '100%', //width
           height: '100%', 
           background: 'linear-gradient(135deg, rgba(6, 118, 120, 0.7), rgba(8, 8, 77, 0.8))', 
           zIndex: 1 
