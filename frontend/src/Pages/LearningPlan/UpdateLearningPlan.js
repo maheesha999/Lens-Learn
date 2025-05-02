@@ -207,7 +207,7 @@ function UpdateLearningPost() {
               border: 'none',
               borderRadius: '50%',
               width: '25px',
-              height: '25px',
+              height: '25px',//height
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
