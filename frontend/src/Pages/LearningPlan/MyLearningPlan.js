@@ -92,7 +92,7 @@ function MyLearningPlan() {
             <div className='user_details_card' style={{
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center',//align
+              alignItems: 'center',
               marginBottom: '15px',
               borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
               paddingBottom: '10px'
@@ -116,7 +116,7 @@ function MyLearningPlan() {
                       cursor: 'pointer',
                       fontSize: '38px',
                       transition: 'transform 0.2s',
-                      padding: '10px',
+                      padding: '10px',//padding
                       borderRadius: '50%',
                       backgroundColor: 'rgba(66, 133, 244, 0.1)'
                     }}
