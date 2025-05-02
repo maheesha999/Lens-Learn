@@ -101,7 +101,7 @@ function AddLearningPlan() {
         postOwnerName,
         imageUrl,
         templateID,
-        startDate, // New field
+        startDate, 
         endDate,   // New field
         category   // New field
       };
