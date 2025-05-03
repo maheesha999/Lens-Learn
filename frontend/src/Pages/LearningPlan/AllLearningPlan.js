@@ -476,7 +476,7 @@ function AllLearningPlan() {
             <p className='template_dates' style={{ 
               color: '#555',
               fontSize: '16px',
-              marginBottom: '10px',//margin
+              marginBottom: '10px',
               display: 'flex',
               alignItems: 'center',
               gap: '5px'
