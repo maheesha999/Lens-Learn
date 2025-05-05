@@ -102,7 +102,7 @@ function AddLearningPlan() {
         imageUrl,
         templateID,
         startDate, 
-        endDate,   // New field
+        endDate,   
         category   // New field
       };
 
