@@ -164,7 +164,7 @@ function AddNewPost() {
         position: 'absolute', 
         top: 0, 
         left: 0, 
-        width: '100%', //width
+        width: '100%', 
         height: '100%', 
         background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.1), rgba(219, 112, 147, 0.2))', 
         zIndex: 1 
