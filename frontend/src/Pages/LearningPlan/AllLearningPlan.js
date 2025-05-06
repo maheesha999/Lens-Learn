@@ -459,7 +459,7 @@ function AllLearningPlan() {
                 frameBorder="0"
                 allowFullScreen
                 style={{
-                  width: '100%',
+                  width: '100%',//width
                   height: '300px',//height
                   borderRadius: '8px',
                   marginBottom: '15px',

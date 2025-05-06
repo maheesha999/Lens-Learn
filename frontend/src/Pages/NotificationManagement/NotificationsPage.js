@@ -84,7 +84,7 @@ function NotificationsPage() {
             borderBottom: '2px solid #000000', 
             paddingBottom: '10px',
             fontSize: '28px',
-            fontWeight: 'bold',//font
+            fontWeight: 'bold',
             marginBottom: '20px',
             textAlign: 'center'
           }}>Notifications</h1>
