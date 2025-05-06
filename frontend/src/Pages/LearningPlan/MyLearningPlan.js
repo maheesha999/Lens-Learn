@@ -92,7 +92,7 @@ function MyLearningPlan() {
             <div className='user_details_card' style={{
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center',//align
+              alignItems: 'center',
               marginBottom: '15px',
               borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
               paddingBottom: '10px'
