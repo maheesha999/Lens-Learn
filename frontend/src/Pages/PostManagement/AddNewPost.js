@@ -157,7 +157,7 @@ function AddNewPost() {
       position: 'relative', 
       minHeight: '100vh',
       backgroundColor: '#f9f9f9',
-      paddingBottom: '50px',
+      paddingBottom: '50px',//padding
       paddingTop: '20px'
     }}>
       <div className="gradient-overlay" style={{ 
