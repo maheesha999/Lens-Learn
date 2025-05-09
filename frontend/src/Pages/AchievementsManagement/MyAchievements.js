@@ -422,6 +422,5 @@ export default MyAchievements;
 // .media-modal {
 //   display: flex;
 //   justify-content: center;
-//   align-items: center;//   max-width: 90%;
-
+//   align-items: center;
 
