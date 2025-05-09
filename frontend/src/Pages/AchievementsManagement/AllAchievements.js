@@ -400,7 +400,6 @@ export default AllAchievements;
 
 // Note: Make sure to adjust the API URL and image URL according to your backend setup.
 
-// The close button is styled to be circular and positioned at the top right corner of the modal.
 // The image is displayed in full size within the modal, and the modal can be closed by clicking the close button or outside the image area.
 // The search functionality filters achievements based on the title or description.
 // The delete functionality confirms the action before proceeding with the deletion.
