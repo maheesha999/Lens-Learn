@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Route, Routes, Navigate } from "react-router";
 import { useNavigate } from "react-router-dom";
-import AddLearningPlan from "./Pages/LearningPlan/AddLearningPlan";
+import AddLearningPlan from "./Pages/LearningPlan/AddLearningPlan";//add 
 import AllLearningPlan from "./Pages/LearningPlan/AllLearningPlan";
 import UpdateLearningPlan from "./Pages/LearningPlan/UpdateLearningPlan";
 import UserLogin from "./Pages/UserManagement/UserLogin";
