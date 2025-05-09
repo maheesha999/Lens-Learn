@@ -161,7 +161,7 @@ function UpdateAchievements() {
     }
   };
 
-  // Handle the case when the user tries to navigate away with unsaved changes
+
 
   return (
     <div className="add-post-container" style={{ 
