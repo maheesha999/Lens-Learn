@@ -418,4 +418,4 @@ function MyAchievements() {
 
 export default MyAchievements;
 
-// CSS styles for the modal
+
