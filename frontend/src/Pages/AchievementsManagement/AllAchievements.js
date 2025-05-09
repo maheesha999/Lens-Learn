@@ -296,8 +296,8 @@ function AllAchievements() {
                           borderRadius: '8px',
                           maxHeight: '400px',
                           display: 'flex',
-                          justifyContent: 'center',
-                          marginTop: '10px'
+                          justifyContent: 'center',// Center the image
+                          marginTop: '10px'// Add some margin to the top
                         }}
                       >
                         <img
@@ -326,6 +326,8 @@ function AllAchievements() {
           </div>
         </div>
       </div>
+      
+      // Modal styles
 
       {/* Modal for displaying full image */}
       <Modal
@@ -395,3 +397,5 @@ function AllAchievements() {
 }
 
 export default AllAchievements;
+
+// Note: Make sure to adjust the API URL and image URL according to your backend setup.
