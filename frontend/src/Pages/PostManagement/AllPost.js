@@ -118,7 +118,7 @@ function AllPost() {
       // Filter posts by logged-in user ID
       setFilteredPosts(posts.filter((post) => post.userID === loggedInUserID));
     }
-    setShowMyPosts(!showMyPosts); // 
+    setShowMyPosts(!showMyPosts); // Toggle the state
   };
 
   const handleLike = async (postId) => {
@@ -132,7 +132,7 @@ function AllPost() {
         params: { userID },
       });
 
-      // Update the specific post's likes in the state
+      // 
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId ? { ...post, likes: response.data.likes } : post
