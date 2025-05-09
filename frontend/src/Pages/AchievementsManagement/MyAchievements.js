@@ -427,4 +427,3 @@ export default MyAchievements;
 //   margin: auto;  
 
 
-//add new image
