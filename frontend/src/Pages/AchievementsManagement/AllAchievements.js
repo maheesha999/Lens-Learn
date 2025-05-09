@@ -123,7 +123,9 @@ function AllAchievements() {
                 textAlign: 'center'
               }}
             />
-          </div>
+          </div> 
+
+          // Floating button to add new achievement
           
           <div className='add_new_btn' 
             onClick={() => (window.location.href = '/addAchievements')}
@@ -257,7 +259,7 @@ function AllAchievements() {
                               transition: 'transform 0.2s',
                               padding: '10px', // Increased from 8px
                               borderRadius: '50%',
-                              backgroundColor: 'rgba(255, 111, 97, 0.1)'
+                              backgroundColor: 'rgba(255, 111, 97, 0.1)'// Increased from 8px
                             }}
                             onMouseOver={(e) => {
                               e.target.style.transform = 'scale(1.1)';
