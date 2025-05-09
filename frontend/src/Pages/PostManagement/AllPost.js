@@ -269,7 +269,7 @@ function AllPost() {
         )
       );
 
-      setEditingComment({}); // 
+      setEditingComment({}); // Clear editing state
     } catch (error) {
       console.error('Error saving comment:', error);
     }
@@ -279,7 +279,7 @@ function AllPost() {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
 
-    // Filter posts based on title, description, or category
+    // 
     const filtered = posts.filter(
       (post) =>
         post.title.toLowerCase().includes(query) ||
