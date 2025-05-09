@@ -25,7 +25,7 @@ function UpdatePost() {
         const post = response.data;
         setTitle(post.title || ''); // Ensure title is not undefined
         setDescription(post.description || ''); // Ensure description is not undefined
-        setCategory(post.category || ''); // Set category
+        setCategory(post.category || ''); // Set 
         setExistingMedia(post.media || []); // Ensure media is an array
         setLoading(false); // Set loading to false after data is fetched
       } catch (error) {
