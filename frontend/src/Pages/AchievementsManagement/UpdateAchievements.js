@@ -557,5 +557,4 @@ function UpdateAchievements() {
 
 export default UpdateAchievements;
 
-// Add any additional styles or media queries as needed
 
