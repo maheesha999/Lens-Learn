@@ -399,3 +399,13 @@ function AllAchievements() {
 export default AllAchievements;
 
 // Note: Make sure to adjust the API URL and image URL according to your backend setup.
+//
+// Also, ensure that the CSS classes used in this component are defined in your CSS file.
+// You can customize the styles further to match your design preferences.
+// The modal is styled to be centered and has a semi-transparent background.
+// The close button is styled to be circular and positioned at the top right corner of the modal.
+// The image is displayed in full size within the modal, and the modal can be closed by clicking the close button or outside the image area.
+// The search functionality filters achievements based on the title or description.
+// The delete functionality confirms the action before proceeding with the deletion.
+// The floating button to add a new achievement is styled to be circular and positioned at the bottom right corner of the screen.
+  
