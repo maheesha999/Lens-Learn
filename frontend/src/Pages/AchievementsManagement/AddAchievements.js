@@ -351,6 +351,7 @@ function AddAchievements() {
                 }}
               />
             </div>
+// css part
 
             <div style={{ margin: '30px 0', textAlign: 'center' }}>
               <button 
