@@ -418,4 +418,17 @@ function MyAchievements() {
 
 export default MyAchievements;
 
+// CSS styles for the modal
+// .media-modal {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;//   max-width: 90%;
+//   max-height: 90%;
+//   margin: auto;  
 
+
+//add new image
+//   padding: 0;
+//   border: none;
+//   background: transparent;
+//   overflow: hidden;
