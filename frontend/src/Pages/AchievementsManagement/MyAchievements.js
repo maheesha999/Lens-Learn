@@ -424,6 +424,5 @@ export default MyAchievements;
 //   justify-content: center;
 //   align-items: center;//   max-width: 90%;
 //   max-height: 90%;
-//   margin: auto;  
 
 
