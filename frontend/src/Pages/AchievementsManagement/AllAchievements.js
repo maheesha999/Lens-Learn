@@ -402,6 +402,5 @@ export default AllAchievements;
 
 // The image is displayed in full size within the modal, and the modal can be closed by clicking the close button or outside the image area.
 // The search functionality filters achievements based on the title or description.
-// The delete functionality confirms the action before proceeding with the deletion.
 // The floating button to add a new achievement is styled to be circular and positioned at the bottom right corner of the screen.
 
