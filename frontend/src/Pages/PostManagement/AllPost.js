@@ -242,7 +242,7 @@ function AllPost() {
         content,
       });
 
-      // 
+      // Update the comment in state
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId
@@ -269,7 +269,7 @@ function AllPost() {
         )
       );
 
-      setEditingComment({}); // Clear editing state
+      setEditingComment({}); // 
     } catch (error) {
       console.error('Error saving comment:', error);
     }
