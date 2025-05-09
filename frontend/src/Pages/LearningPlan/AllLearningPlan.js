@@ -460,9 +460,9 @@ function AllLearningPlan() {
                 allowFullScreen
                 style={{
                   width: '100%',//width
-                  height: '300px',
+                  height: '300px',//height
                   borderRadius: '8px',
-                  marginBottom: '15px',//margin
+                  marginBottom: '15px',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
                 }}
               ></iframe>
