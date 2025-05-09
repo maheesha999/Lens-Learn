@@ -157,11 +157,11 @@ function AllPost() {
     }
     try {
       if (followedUsers.includes(postOwnerID)) {
-        // 
+        // Unfollow logic
         await axios.put(`http://localhost:8080/user/${userID}/unfollow`, { unfollowUserID: postOwnerID });
         setFollowedUsers(followedUsers.filter((id) => id !== postOwnerID));
       } else {
-        // Follow logic
+        // 
         await axios.put(`http://localhost:8080/user/${userID}/follow`, { followUserID: postOwnerID });
         setFollowedUsers([...followedUsers, postOwnerID]);
       }
