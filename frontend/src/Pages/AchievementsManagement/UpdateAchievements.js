@@ -20,6 +20,8 @@ function UpdateAchievements() {
   const [isDragging, setIsDragging] = useState(false);
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
 
+  // Fetch the achievement data when the component mounts
+  
   useEffect(() => {
     const fetchAchievement = async () => {
       try {
@@ -133,6 +135,8 @@ function UpdateAchievements() {
         body: JSON.stringify(updatedData),
       });
 
+      // Check if the update was successful
+
       if (response.ok) {
         alert('Achievement updated successfully!');
         window.location.href = '/myAchievements';
@@ -156,6 +160,8 @@ function UpdateAchievements() {
       window.location.href = '/allAchievements';
     }
   };
+
+
 
   return (
     <div className="add-post-container" style={{ 
@@ -550,3 +556,5 @@ function UpdateAchievements() {
 }
 
 export default UpdateAchievements;
+
+

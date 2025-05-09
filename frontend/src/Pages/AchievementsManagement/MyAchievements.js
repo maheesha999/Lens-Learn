@@ -5,6 +5,10 @@ import Modal from 'react-modal';
 import NavBar from '../../Components/NavBar/NavBar'
 import { IoIosCreate } from "react-icons/io";
 
+// CSS
+// import './MyAchievements.css';
+
+
 Modal.setAppElement('#root');
 
 function MyAchievements() {
@@ -193,8 +197,8 @@ function MyAchievements() {
                     e.target.style.transform = 'translateY(0)';
                     e.target.style.boxShadow = '0 4px 8px rgba(66, 133, 244, 0.3)';
                   }}
-                >Create New Achievement</button>
-              </div>
+                >Create New Achievement</button> 
+              </div>  //new div for no achievements found
             ) : (
               filteredData.map((progress) => (
                 <div key={progress.id} className='post_card' style={{
@@ -266,7 +270,7 @@ function MyAchievements() {
                             style={{
                               color: '#FF6F61',
                               cursor: 'pointer',
-                              fontSize: '38px',
+                              fontSize: '38px',// 38px
                               transition: 'transform 0.2s',
                               padding: '10px',
                               borderRadius: '50%',
@@ -312,7 +316,7 @@ function MyAchievements() {
                           cursor: 'pointer'
                         }}
                         onClick={() => openModal(`http://localhost:8080/achievements/images/${progress.imageUrl}`)}
-                      >
+                      >  
                         <img
                           src={`http://localhost:8080/achievements/images/${progress.imageUrl}`}
                           alt="Achievement"
@@ -322,7 +326,7 @@ function MyAchievements() {
                             maxHeight: '400px',
                            
                             transition: 'transform 0.3s ease'
-                          }}
+                          }}                            //add image
                           onMouseOver={(e) => {
                             e.target.style.transform = 'scale(1.05)';
                           }}
@@ -413,3 +417,5 @@ function MyAchievements() {
 }
 
 export default MyAchievements;
+
+
