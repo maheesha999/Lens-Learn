@@ -559,5 +559,4 @@ export default UpdateAchievements;
 
 // Add any additional styles or media queries as needed
 // to ensure the component is responsive and visually appealing on different screen sizes.  
-// You can also consider using CSS-in-JS libraries or styled-components for better styling management.
 
