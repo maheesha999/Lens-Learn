@@ -401,4 +401,3 @@ export default AllAchievements;
 
 // CSS styles for the modal close button
 // .close-modal-btn {
-//   position: absolute;
