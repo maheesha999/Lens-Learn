@@ -48,7 +48,7 @@ function AllPost() {
             }))
             .catch((error) => {
               if (error.response && error.response.status === 404) {
-                // 
+                // Handle case where user is deleted
                 console.warn(`User with ID ${userID} not found. Removing their posts.`);
                 setPosts((prevPosts) => prevPosts.filter((post) => post.userID !== userID));
                 setFilteredPosts((prevFilteredPosts) => prevFilteredPosts.filter((post) => post.userID !== userID));
@@ -63,7 +63,7 @@ function AllPost() {
           acc[owner.userID] = owner.fullName;
           return acc;
         }, {});
-        console.log('Post Owners Map:', ownerMap); // Debug log to verify postOwners map
+        console.log('Post Owners Map:', ownerMap); // 
         setPostOwners(ownerMap);
       } catch (error) {
         console.error('Error fetching posts:', error); // Log error for fetching posts
