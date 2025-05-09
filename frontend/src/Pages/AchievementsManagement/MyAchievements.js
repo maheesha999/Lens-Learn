@@ -430,4 +430,3 @@ export default MyAchievements;
 //add new image
 //   padding: 0;
 //   border: none;
-//   background: transparent;
