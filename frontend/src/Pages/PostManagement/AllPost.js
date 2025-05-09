@@ -98,8 +98,8 @@ function AllPost() {
     try {
       await axios.delete(`http://localhost:8080/posts/${postId}`);
       alert('Post deleted successfully!');
-      setPosts(posts.filter((post) => post.id !== postId)); // 
-      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); // Update filtered posts
+      setPosts(posts.filter((post) => post.id !== postId)); // Remove the deleted post from the UI
+      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); // 
     } catch (error) {
       console.error('Error deleting post:', error);
       alert('Failed to delete post.');
