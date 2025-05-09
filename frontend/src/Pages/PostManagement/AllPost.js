@@ -66,7 +66,7 @@ function AllPost() {
         console.log('Post Owners Map:', ownerMap); // Debug log to verify postOwners map
         setPostOwners(ownerMap);
       } catch (error) {
-        console.error('Error fetching posts:', error); // 
+        console.error('Error fetching posts:', error); // Log error for fetching posts
       }
     };
 
@@ -92,7 +92,7 @@ function AllPost() {
   const handleDelete = async (postId) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this post?');
     if (!confirmDelete) {
-      return; // Exit if the user cancels the confirmation
+      return; // 
     }
 
     try {
