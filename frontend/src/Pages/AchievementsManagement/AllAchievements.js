@@ -41,6 +41,8 @@ function AllAchievements() {
     setFilteredData(filtered);
   };
 
+  // Function to handle delete action
+  // This function will be called when the delete button is clicked
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this Achievement?')) {
       try {
@@ -69,6 +71,7 @@ function AllAchievements() {
     setIsModalOpen(false);
   };
 
+  // Custom styles for the modal
   return (
     <div>
       <div className='continer' style={{ 
