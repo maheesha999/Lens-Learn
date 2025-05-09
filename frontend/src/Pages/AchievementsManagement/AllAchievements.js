@@ -6,6 +6,8 @@ import { IoIosCreate } from "react-icons/io";
 import Modal from 'react-modal';
 import './AllAchievements.css';
 
+// Set the app element for accessibility
+
 Modal.setAppElement('#root');
 
 function AllAchievements() {
@@ -39,6 +41,8 @@ function AllAchievements() {
     setFilteredData(filtered);
   };
 
+  // Function to handle delete action
+  // This function will be called when the delete button is clicked
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this Achievement?')) {
       try {
@@ -67,6 +71,7 @@ function AllAchievements() {
     setIsModalOpen(false);
   };
 
+  // Custom styles for the modal
   return (
     <div>
       <div className='continer' style={{ 
@@ -118,7 +123,9 @@ function AllAchievements() {
                 textAlign: 'center'
               }}
             />
-          </div>
+          </div> 
+
+          // Floating button to add new achievement
           
           <div className='add_new_btn' 
             onClick={() => (window.location.href = '/addAchievements')}
@@ -252,7 +259,7 @@ function AllAchievements() {
                               transition: 'transform 0.2s',
                               padding: '10px', // Increased from 8px
                               borderRadius: '50%',
-                              backgroundColor: 'rgba(255, 111, 97, 0.1)'
+                              backgroundColor: 'rgba(255, 111, 97, 0.1)'// Increased from 8px
                             }}
                             onMouseOver={(e) => {
                               e.target.style.transform = 'scale(1.1)';
@@ -289,8 +296,8 @@ function AllAchievements() {
                           borderRadius: '8px',
                           maxHeight: '400px',
                           display: 'flex',
-                          justifyContent: 'center',
-                          marginTop: '10px'
+                          justifyContent: 'center',// Center the image
+                          marginTop: '10px'// Add some margin to the top
                         }}
                       >
                         <img
@@ -319,6 +326,8 @@ function AllAchievements() {
           </div>
         </div>
       </div>
+      
+      // Modal styles
 
       {/* Modal for displaying full image */}
       <Modal
@@ -388,3 +397,5 @@ function AllAchievements() {
 }
 
 export default AllAchievements;
+
+// Note: Make sure to adjust the API URL and image URL according to your backend setup.

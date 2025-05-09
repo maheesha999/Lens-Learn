@@ -304,7 +304,7 @@ function AllPost() {
       <div className='continer' style={{ 
         position: 'relative',
         minHeight: '100vh',
-        backgroundColor: '#0a1f44',
+        backgroundColor: '#0a1f44',//bg
         paddingBottom: '50px',//padding
         paddingTop: '20px'
       }}>
@@ -835,7 +835,7 @@ function AllPost() {
                                       borderRadius: '50%',
                                       backgroundColor: 'rgba(66, 133, 244, 0.1)',
                                       width: '40px', // Added fixed width
-                                      height: '40px', // Added fixed height
+                                      height: '40px', // 
                                       display: 'flex',
                                       alignItems: 'center',
                                       justifyContent: 'center',

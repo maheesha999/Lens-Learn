@@ -351,6 +351,7 @@ function AddAchievements() {
                 }}
               />
             </div>
+// css part
 
             //css in this file
 
@@ -396,3 +397,5 @@ function AddAchievements() {
 }
 
 export default AddAchievements;
+
+//add achievements.css file
