@@ -399,5 +399,8 @@ function AllAchievements() {
 export default AllAchievements;
 
 
-// The image is displayed in full size within the modal, and the modal can be closed by clicking the close button or outside the image area.
-
+// CSS styles for the modal close button
+// .close-modal-btn {
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
