@@ -510,7 +510,7 @@ function AllPost() {
                               borderRadius: '50%',
                               backgroundColor: 'rgba(255, 111, 97, 0.1)',
                               width: '45px', // Added fixed width
-                              height: '45px', // 
+                              height: '45px', // Added fixed height
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'center'
@@ -772,7 +772,7 @@ function AllPost() {
                                     style={{
                                       color: '#4285F4',
                                       cursor: 'pointer',
-                                      fontSize: '24px', // Further increased from 20px
+                                      fontSize: '24px', // 
                                       margin: '0 5px',
                                       padding: '8px', // Further increased from 6px
                                       borderRadius: '50%',
