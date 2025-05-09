@@ -99,7 +99,7 @@ function AllPost() {
       await axios.delete(`http://localhost:8080/posts/${postId}`);
       alert('Post deleted successfully!');
       setPosts(posts.filter((post) => post.id !== postId)); // Remove the deleted post from the UI
-      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); // 
+      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); // Update filtered posts
     } catch (error) {
       console.error('Error deleting post:', error);
       alert('Failed to delete post.');
@@ -107,7 +107,7 @@ function AllPost() {
   };
 
   const handleUpdate = (postId) => {
-    navigate(`/updatePost/${postId}`); // Navigate to the UpdatePost page with the post ID
+    navigate(`/updatePost/${postId}`); // 
   };
 
   const handleMyPostsToggle = () => {
