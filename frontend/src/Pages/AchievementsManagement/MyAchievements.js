@@ -77,7 +77,7 @@ function MyAchievements() {
       <div className='continer' style={{ 
         position: 'relative',
         minHeight: '100vh',
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#f9f9f9',//bg
         paddingBottom: '50px',
         paddingTop: '20px'
       }}>

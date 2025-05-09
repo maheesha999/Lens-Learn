@@ -8,7 +8,7 @@ function UserRegister() {
     const [formData, setFormData] = useState({
         fullname: '',
         email: '',
-        password: '',
+        password: '',//pw
         phone: '',
         skills: [],
         bio: '', // Added bio field
