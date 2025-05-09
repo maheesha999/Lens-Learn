@@ -39,7 +39,7 @@ function AllPost() {
         setFilteredPosts(response.data); // Initially show all posts
 
         // Fetch post owners' names
-        const userIDs = [...new Set(response.data.map((post) => post.userID))]; // 
+        const userIDs = [...new Set(response.data.map((post) => post.userID))]; // Get unique userIDs
         const ownerPromises = userIDs.map((userID) =>
           axios.get(`http://localhost:8080/user/${userID}`)
             .then((res) => ({
@@ -48,7 +48,7 @@ function AllPost() {
             }))
             .catch((error) => {
               if (error.response && error.response.status === 404) {
-                // Handle case where user is deleted
+                // 
                 console.warn(`User with ID ${userID} not found. Removing their posts.`);
                 setPosts((prevPosts) => prevPosts.filter((post) => post.userID !== userID));
                 setFilteredPosts((prevFilteredPosts) => prevFilteredPosts.filter((post) => post.userID !== userID));
