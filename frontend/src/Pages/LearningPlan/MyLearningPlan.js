@@ -93,7 +93,7 @@ function MyLearningPlan() {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',//align
-              marginBottom: '15px',//margin
+              marginBottom: '15px',
               borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
               paddingBottom: '10px'
             }}>
@@ -114,7 +114,7 @@ function MyLearningPlan() {
                     style={{
                       color: '#4285F4',
                       cursor: 'pointer',
-                      fontSize: '38px',//font
+                      fontSize: '38px',
                       transition: 'transform 0.2s',
                       padding: '10px',
                       borderRadius: '50%',
