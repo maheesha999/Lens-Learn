@@ -176,7 +176,7 @@ function AllPost() {
       alert('Please log in to comment.');
       return;
     }
-    const content = newComment[postId] || ''; // 
+    const content = newComment[postId] || ''; // Get the comment content for the specific post
     if (!content.trim()) {
       alert('Comment cannot be empty.');
       return;
@@ -187,7 +187,7 @@ function AllPost() {
         content,
       });
 
-      // Update the specific post's comments in the state
+      // 
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId ? { ...post, comments: response.data.comments } : post
