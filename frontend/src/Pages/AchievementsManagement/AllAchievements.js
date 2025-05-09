@@ -399,4 +399,3 @@ function AllAchievements() {
 export default AllAchievements;
 
 
-// CSS styles for the modal close button
