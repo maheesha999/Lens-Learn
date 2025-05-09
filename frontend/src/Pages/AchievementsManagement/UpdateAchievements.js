@@ -20,6 +20,8 @@ function UpdateAchievements() {
   const [isDragging, setIsDragging] = useState(false);
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
 
+  // Fetch the achievement data when the component mounts
+  // and set it to the formData state
   useEffect(() => {
     const fetchAchievement = async () => {
       try {
