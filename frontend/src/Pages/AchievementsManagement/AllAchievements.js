@@ -403,4 +403,3 @@ export default AllAchievements;
 // .close-modal-btn {
 //   position: absolute;
 //   top: 20px;
-//   right: 20px;
