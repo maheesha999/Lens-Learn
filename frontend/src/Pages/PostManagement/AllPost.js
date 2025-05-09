@@ -213,7 +213,7 @@ function AllPost() {
         params: { userID },
       });
 
-      // 
+      // Update state to remove the deleted comment
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId
@@ -242,7 +242,7 @@ function AllPost() {
         content,
       });
 
-      // Update the comment in state
+      // 
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId
