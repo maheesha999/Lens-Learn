@@ -107,12 +107,12 @@ function AllPost() {
   };
 
   const handleUpdate = (postId) => {
-    navigate(`/updatePost/${postId}`); // 
+    navigate(`/updatePost/${postId}`); // Navigate to the UpdatePost page with the post ID
   };
 
   const handleMyPostsToggle = () => {
     if (showMyPosts) {
-      // Show all posts
+      // 
       setFilteredPosts(posts);
     } else {
       // Filter posts by logged-in user ID
