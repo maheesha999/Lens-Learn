@@ -305,7 +305,7 @@ function AllPost() {
         position: 'relative',
         minHeight: '100vh',
         backgroundColor: '#0a1f44',
-        paddingBottom: '50px',//
+        paddingBottom: '50px',//padding
         paddingTop: '20px'
       }}>
         <div style={{ 
@@ -478,7 +478,7 @@ function AllPost() {
                             style={{
                               color: '#4285F4',
                               cursor: 'pointer',
-                              fontSize: '24px', // Increased from 18px
+                              fontSize: '24px', // 
                               transition: 'transform 0.2s',
                               padding: '10px', // Increased from 8px
                               borderRadius: '50%',
