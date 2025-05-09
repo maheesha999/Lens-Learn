@@ -423,6 +423,5 @@ export default MyAchievements;
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;//   max-width: 90%;
-//   max-height: 90%;
 
 
