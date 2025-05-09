@@ -209,7 +209,7 @@ function UpdateLearningPost() {
               width: '25px',
               height: '25px',//height
               display: 'flex',
-              alignItems: 'center',//align
+              alignItems: 'center',
               justifyContent: 'center',
               cursor: 'pointer',
               transition: 'background-color 0.3s'

@@ -321,7 +321,7 @@ function MyAllPost() {
           position: 'relative',
           zIndex: 2,
           maxWidth: '1200px',
-          margin: '20px auto',//margin
+          margin: '20px auto',
           padding: '0 15px',
           marginTop: '80px',
         }}>
