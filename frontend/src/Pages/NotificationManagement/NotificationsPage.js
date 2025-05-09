@@ -68,7 +68,7 @@ function NotificationsPage() {
       <div className="post-content-wrapper" style={{ 
         position: 'relative', 
         zIndex: 2,
-        maxWidth: '900px',
+        maxWidth: '900px',//width
         margin: '7rem auto',
         padding: '0 15px'
       }}>

@@ -55,7 +55,7 @@ function GoogalUserPro() {
                     if (response.ok) {
                         alert("Profile deleted successfully!");
                         localStorage.removeItem('userID');
-                        navigate('/'); // Redirect to home or login page
+                        navigate('/'); // Redirect to home or login pg
                     } else {
                         alert("Failed to delete profile.");
                     }

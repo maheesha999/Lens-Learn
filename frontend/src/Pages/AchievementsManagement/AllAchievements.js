@@ -30,7 +30,7 @@ function AllAchievements() {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
 
-    // Filter achievements based on title or description
+    // Filter achievements 
     const filtered = progressData.filter(
       (achievement) =>
         achievement.title.toLowerCase().includes(query) ||

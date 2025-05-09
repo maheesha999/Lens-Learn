@@ -75,7 +75,7 @@ function UserProfile() {
     return (
         <div className="add-post-container" style={{ 
             position: 'relative', 
-            minHeight: '100vh',
+            minHeight: '100vh',//height
             backgroundColor: '#f9f9f9',
             paddingBottom: '50px',
             paddingTop: '20px'
