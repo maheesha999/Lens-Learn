@@ -484,7 +484,7 @@ function AllPost() {
                               borderRadius: '50%',
                               backgroundColor: 'rgba(66, 133, 244, 0.1)',
                               width: '45px', // Added fixed width
-                              height: '45px', // 
+                              height: '45px', // Added fixed height
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'center'
@@ -504,7 +504,7 @@ function AllPost() {
                             style={{
                               color: '#FF6F61',
                               cursor: 'pointer',
-                              fontSize: '24px', // Increased from 18px
+                              fontSize: '24px', // 
                               transition: 'transform 0.2s',
                               padding: '10px', // Increased from 8px
                               borderRadius: '50%',
