@@ -556,3 +556,12 @@ function UpdateAchievements() {
 }
 
 export default UpdateAchievements;
+
+// Add any additional styles or media queries as needed
+// to ensure the component is responsive and visually appealing on different screen sizes.  
+// You can also consider using CSS-in-JS libraries or styled-components for better styling management.
+// Make sure to test the component thoroughly to ensure all functionalities work as expected.
+
+// You can also consider adding error handling for the image upload and update process.
+// This can include displaying error messages to the user if something goes wrong.
+// Additionally, consider adding loading indicators or spinners to improve user experience during async operations.
