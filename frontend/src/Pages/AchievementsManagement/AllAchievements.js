@@ -398,4 +398,4 @@ function AllAchievements() {
 
 export default AllAchievements;
 
-// Note: Make sure to adjust the API URL and image URL according to your backend setup.
+
