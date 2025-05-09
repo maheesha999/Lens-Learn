@@ -161,7 +161,7 @@ function AllPost() {
         await axios.put(`http://localhost:8080/user/${userID}/unfollow`, { unfollowUserID: postOwnerID });
         setFollowedUsers(followedUsers.filter((id) => id !== postOwnerID));
       } else {
-        // 
+        // Follow logic
         await axios.put(`http://localhost:8080/user/${userID}/follow`, { followUserID: postOwnerID });
         setFollowedUsers([...followedUsers, postOwnerID]);
       }
@@ -176,7 +176,7 @@ function AllPost() {
       alert('Please log in to comment.');
       return;
     }
-    const content = newComment[postId] || ''; // Get the comment content for the specific post
+    const content = newComment[postId] || ''; // 
     if (!content.trim()) {
       alert('Comment cannot be empty.');
       return;
