@@ -564,4 +564,3 @@ export default UpdateAchievements;
 
 // You can also consider adding error handling for the image upload and update process.
 // This can include displaying error messages to the user if something goes wrong.
-// Additionally, consider adding loading indicators or spinners to improve user experience during async operations.
