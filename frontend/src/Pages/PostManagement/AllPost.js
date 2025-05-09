@@ -509,8 +509,8 @@ function AllPost() {
                               padding: '10px', // Increased from 8px
                               borderRadius: '50%',
                               backgroundColor: 'rgba(255, 111, 97, 0.1)',
-                              width: '45px', // 
-                              height: '45px', // Added fixed height
+                              width: '45px', // Added fixed width
+                              height: '45px', // 
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'center'
