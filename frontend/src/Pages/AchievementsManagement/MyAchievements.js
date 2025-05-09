@@ -428,4 +428,3 @@ export default MyAchievements;
 
 
 //add new image
-//   padding: 0;
