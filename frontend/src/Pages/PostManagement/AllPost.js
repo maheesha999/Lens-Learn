@@ -835,7 +835,7 @@ function AllPost() {
                                       borderRadius: '50%',
                                       backgroundColor: 'rgba(66, 133, 244, 0.1)',
                                       width: '40px', // Added fixed width
-                                      height: '40px', // Added fixed height
+                                      height: '40px', // 
                                       display: 'flex',
                                       alignItems: 'center',
                                       justifyContent: 'center',
