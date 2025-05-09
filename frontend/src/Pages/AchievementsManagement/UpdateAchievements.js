@@ -562,5 +562,3 @@ export default UpdateAchievements;
 // You can also consider using CSS-in-JS libraries or styled-components for better styling management.
 // Make sure to test the component thoroughly to ensure all functionalities work as expected.
 
-// You can also consider adding error handling for the image upload and update process.
-// This can include displaying error messages to the user if something goes wrong.
