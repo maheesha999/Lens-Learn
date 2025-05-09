@@ -431,4 +431,3 @@ export default MyAchievements;
 //   padding: 0;
 //   border: none;
 //   background: transparent;
-//   overflow: hidden;
