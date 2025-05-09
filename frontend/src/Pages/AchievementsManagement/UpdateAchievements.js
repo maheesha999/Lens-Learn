@@ -22,6 +22,7 @@ function UpdateAchievements() {
 
   // Fetch the achievement data when the component mounts
   // and set it to the formData state
+  // This will also set the previewImage if an imageUrl is present
   useEffect(() => {
     const fetchAchievement = async () => {
       try {
