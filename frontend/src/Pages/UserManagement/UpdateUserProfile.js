@@ -9,7 +9,7 @@ function UpdateUserProfile() {
   const [formData, setFormData] = useState({
     fullname: '',
     email: '',
-    password: '',//pw
+    password: '',
     phone: '',
     skills: [],
     bio: '',

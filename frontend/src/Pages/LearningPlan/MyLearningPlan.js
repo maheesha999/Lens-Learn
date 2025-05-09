@@ -93,7 +93,7 @@ function MyLearningPlan() {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',//align
-              marginBottom: '15px',//margin
+              marginBottom: '15px',
               borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
               paddingBottom: '10px'
             }}>

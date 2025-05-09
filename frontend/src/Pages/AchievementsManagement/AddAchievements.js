@@ -6,7 +6,7 @@ function AddAchievements() {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    date: '',//date
+    date: '',
     postOwnerID: '',
     category: '',
     postOwnerName: '',
