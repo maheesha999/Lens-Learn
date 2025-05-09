@@ -135,6 +135,8 @@ function UpdateAchievements() {
         body: JSON.stringify(updatedData),
       });
 
+      // Check if the update was successful
+
       if (response.ok) {
         alert('Achievement updated successfully!');
         window.location.href = '/myAchievements';
@@ -158,6 +160,8 @@ function UpdateAchievements() {
       window.location.href = '/allAchievements';
     }
   };
+
+  // Handle the case when the user tries to navigate away with unsaved changes
 
   return (
     <div className="add-post-container" style={{ 
