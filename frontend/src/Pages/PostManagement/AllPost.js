@@ -504,9 +504,9 @@ function AllPost() {
                             style={{
                               color: '#FF6F61',
                               cursor: 'pointer',
-                              fontSize: '24px', // 
+                              fontSize: '24px', // Increased from 18px
                               transition: 'transform 0.2s',
-                              padding: '10px', // Increased from 8px
+                              padding: '10px', // 
                               borderRadius: '50%',
                               backgroundColor: 'rgba(255, 111, 97, 0.1)',
                               width: '45px', // Added fixed width
