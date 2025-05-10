@@ -398,7 +398,6 @@ export default AddAchievements;
 
 //add achievements.css file
 // .add-post-container {
-//   position: relative;
 
 
   
