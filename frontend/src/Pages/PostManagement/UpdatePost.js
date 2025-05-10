@@ -5,7 +5,7 @@ import NavBar from '../../Components/NavBar/NavBar';
 import './AddNewPost.css';  
 
 function UpdatePost() {
-  const { id } = useParams(); // Get the post ID from URL
+  const { id } = useParams(); 
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
