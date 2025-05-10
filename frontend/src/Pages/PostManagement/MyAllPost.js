@@ -24,7 +24,7 @@ function MyAllPost() {
   const [selectedMedia, setSelectedMedia] = useState(null);
   const [followedUsers, setFollowedUsers] = useState([]); 
   const [newComment, setNewComment] = useState({}); 
-  const [editingComment, setEditingComment] = useState({}); 
+  const [editingComment, setEditingComment] = useState({}); // State for editing comments
   const [searchQuery, setSearchQuery] = useState(''); // State for search query
   const navigate = useNavigate();
   const loggedInUserID = localStorage.getItem('userID'); // Get the logged-in user's ID
