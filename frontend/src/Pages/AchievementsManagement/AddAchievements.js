@@ -397,6 +397,5 @@ function AddAchievements() {
 export default AddAchievements;
 
 //add achievements.css file
-//this is the css file for the add achievements page
 
   
