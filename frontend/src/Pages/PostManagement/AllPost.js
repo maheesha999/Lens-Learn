@@ -39,7 +39,7 @@ function AllPost() {
         setFilteredPosts(response.data); 
 
         // Fetch post owners' names
-        const userIDs = [...new Set(response.data.map((post) => post.userID))]; 
+        const userIDs = [...new Set(response.data.map((post) => post.userID))]; // Get unique userIDs
         const ownerPromises = userIDs.map((userID) =>
           axios.get(`http://localhost:8080/user/${userID}`)
             .then((res) => ({
