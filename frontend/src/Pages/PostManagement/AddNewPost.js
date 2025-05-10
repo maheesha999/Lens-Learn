@@ -51,7 +51,7 @@ function AddNewPost() {
         return;
       }
 
-      // Add file preview object with type and URL
+     
       previews.push({ type: file.type, url: URL.createObjectURL(file) });
     }
 
