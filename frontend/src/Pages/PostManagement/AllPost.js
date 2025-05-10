@@ -48,7 +48,7 @@ function AllPost() {
             }))
             .catch((error) => {
               if (error.response && error.response.status === 404) {
-                // Handle case where user is deleted
+                
                 console.warn(`User with ID ${userID} not found. Removing their posts.`);
                 setPosts((prevPosts) => prevPosts.filter((post) => post.userID !== userID));
                 setFilteredPosts((prevFilteredPosts) => prevFilteredPosts.filter((post) => post.userID !== userID));
