@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import NavBar from '../../Components/NavBar/NavBar';
-import './AddNewPost.css'; // include the CSS file
+import './AddNewPost.css'; 
 
 function AddNewPost() {
   const [title, setTitle] = useState('');
@@ -18,7 +18,7 @@ function AddNewPost() {
   };
 
   const processMediaFiles = (files) => {
-    const maxFileSize = 50 * 1024 * 1024; // 50MB
+    const maxFileSize = 50 * 1024 * 1024; 
     let imageCount = 0;
     let videoCount = 0;
     const previews = [];
@@ -34,10 +34,10 @@ function AddNewPost() {
       } else if (file.type === 'video/mp4') {
         videoCount++;
 
-        // Validate video duration
+        
         const video = document.createElement('video');
         video.preload = 'metadata';
-        video.src = URL.createObjectURL(file); //url
+        video.src = URL.createObjectURL(file); 
 
         video.onloadedmetadata = () => {
           URL.revokeObjectURL(video.src);
@@ -51,7 +51,7 @@ function AddNewPost() {
         return;
       }
 
-      // Add file preview object with type and URL
+      
       previews.push({ type: file.type, url: URL.createObjectURL(file) });
     }
 
@@ -73,7 +73,7 @@ function AddNewPost() {
     const updatedMedia = [...media];
     const updatedPreviews = [...mediaPreviews];
     
-    // Revoke the object URL to prevent memory leaks
+   
     URL.revokeObjectURL(mediaPreviews[index].url);
     
     updatedMedia.splice(index, 1);
@@ -132,7 +132,7 @@ function AddNewPost() {
     media.forEach((file) => formData.append('mediaFiles', file));
 
     try {
-      // Show loading state
+      
       document.getElementById('submit-button').disabled = true;
       document.getElementById('submit-button').innerText = 'Creating Post...';
       
@@ -146,7 +146,7 @@ function AddNewPost() {
       console.error(error);
       alert('Failed to create post. Please try again.');
       
-      // Reset button state
+      
       document.getElementById('submit-button').disabled = false;
       document.getElementById('submit-button').innerText = 'Create Post';
     }
@@ -164,7 +164,7 @@ function AddNewPost() {
         position: 'absolute', 
         top: 0, 
         left: 0, 
-        width: '100%', //width
+        width: '100%',
         height: '100%', 
         background: 'linear-gradient(135deg, rgba(65, 105, 225, 0.1), rgba(219, 112, 147, 0.2))', 
         zIndex: 1 

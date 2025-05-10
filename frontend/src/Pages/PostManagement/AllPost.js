@@ -23,7 +23,7 @@ function AllPost() {
   const [showMyPosts, setShowMyPosts] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMedia, setSelectedMedia] = useState(null);
-  const [followedUsers, setFollowedUsers] = useState([]); // State to track followed users
+  const [followedUsers, setFollowedUsers] = useState([]); 
   const [newComment, setNewComment] = useState({}); // State new comments
   const [editingComment, setEditingComment] = useState({}); // State for editing comments
   const [searchQuery, setSearchQuery] = useState(''); // State for search query
@@ -31,7 +31,7 @@ function AllPost() {
   const loggedInUserID = localStorage.getItem('userID'); // Get the logged-in user's ID
 
   useEffect(() => {
-    // Fetch all posts from the backend
+   
     const fetchPosts = async () => {
       try {
         const response = await axios.get('http://localhost:8080/posts');
@@ -63,10 +63,9 @@ function AllPost() {
           acc[owner.userID] = owner.fullName;
           return acc;
         }, {});
-        console.log('Post Owners Map:', ownerMap); // Debug log to verify postOwners map
-        setPostOwners(ownerMap);
+        console.log('Post Owners Map:', ownerMap); 
       } catch (error) {
-        console.error('Error fetching posts:', error); // Log error for fetching posts
+        console.error('Error fetching posts:', error); 
       }
     };
 
@@ -92,14 +91,14 @@ function AllPost() {
   const handleDelete = async (postId) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this post?');
     if (!confirmDelete) {
-      return; // Exit if the user cancels the confirmation
+      return; 
     }
 
     try {
       await axios.delete(`http://localhost:8080/posts/${postId}`);
       alert('Post deleted successfully!');
-      setPosts(posts.filter((post) => post.id !== postId)); // Remove the deleted post from the UI
-      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); // Update filtered posts
+      setPosts(posts.filter((post) => post.id !== postId)); 
+      setFilteredPosts(filteredPosts.filter((post) => post.id !== postId)); 
     } catch (error) {
       console.error('Error deleting post:', error);
       alert('Failed to delete post.');
@@ -107,18 +106,18 @@ function AllPost() {
   };
 
   const handleUpdate = (postId) => {
-    navigate(`/updatePost/${postId}`); // Navigate to the UpdatePost page with the post ID
+    navigate(`/updatePost/${postId}`); 
   };
 
   const handleMyPostsToggle = () => {
     if (showMyPosts) {
-      // Show all posts
+     
       setFilteredPosts(posts);
     } else {
-      // Filter posts by logged-in user ID
+      
       setFilteredPosts(posts.filter((post) => post.userID === loggedInUserID));
     }
-    setShowMyPosts(!showMyPosts); // Toggle the state
+    setShowMyPosts(!showMyPosts); 
   };
 
   const handleLike = async (postId) => {
@@ -132,7 +131,7 @@ function AllPost() {
         params: { userID },
       });
 
-      // Update the specific post's likes in the state
+      
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId ? { ...post, likes: response.data.likes } : post
