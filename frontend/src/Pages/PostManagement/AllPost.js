@@ -268,7 +268,7 @@ function AllPost() {
         )
       );
 
-      setEditingComment({}); // Clear editing state
+      setEditingComment({}); 
     } catch (error) {
       console.error('Error saving comment:', error);
     }
