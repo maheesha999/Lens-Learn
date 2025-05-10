@@ -304,7 +304,7 @@ function AllPost() {
         position: 'relative',
         minHeight: '100vh',
         backgroundColor: '#0a1f44',
-        paddingBottom: '50px',
+        paddingBottom: '50px',//padding
         paddingTop: '20px'
       }}>
         <div style={{ 
