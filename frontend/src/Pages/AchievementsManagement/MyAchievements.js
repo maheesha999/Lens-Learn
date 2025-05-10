@@ -8,7 +8,6 @@ import { IoIosCreate } from "react-icons/io";
 // CSS
 // import './MyAchievements.css';
 
-
 Modal.setAppElement('#root');
 
 function MyAchievements() {

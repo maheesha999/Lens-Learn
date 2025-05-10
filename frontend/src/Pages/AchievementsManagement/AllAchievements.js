@@ -7,7 +7,6 @@ import Modal from 'react-modal';
 import './AllAchievements.css';
 
 // Set the app element for accessibility
-
 Modal.setAppElement('#root');
 
 function AllAchievements() {

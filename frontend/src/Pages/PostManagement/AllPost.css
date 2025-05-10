@@ -17,7 +17,6 @@
   align-items: center;
   gap: 20px;
 }
-
 .search-input {
   flex: 1;
   padding: 12px 20px;
@@ -45,7 +44,6 @@
   transition: all 0.3s ease;
   position: relative;
 }
-
 .floating-add-btn:hover {
   transform: scale(1.1);
   background: #1976d2;
