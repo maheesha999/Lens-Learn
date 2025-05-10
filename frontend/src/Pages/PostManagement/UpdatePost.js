@@ -23,7 +23,7 @@ function UpdatePost() {
       try {
         const response = await axios.get(`http://localhost:8080/posts/${id}`);
         const post = response.data;
-        setTitle(post.title || ''); // Ensure title is not undefined
+        setTitle(post.title || ''); // Ensur
         setDescription(post.description || ''); // Ensure description is not undefined
         setCategory(post.category || ''); // Set 
         setExistingMedia(post.media || []); // Ensure media is an array
