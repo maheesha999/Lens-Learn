@@ -403,6 +403,5 @@ export default AddAchievements;
 //   min-height: 100vh;
 //   background-color: #f9f9f9;
 //   padding-bottom: 50px;
-//   padding-top: 20px;
 
   
