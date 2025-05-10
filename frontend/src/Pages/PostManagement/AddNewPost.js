@@ -18,7 +18,7 @@ function AddNewPost() {
   };
 
   const processMediaFiles = (files) => {
-    const maxFileSize = 50 * 1024 * 1024; // 50MB
+    const maxFileSize = 50 * 1024 * 1024; 
     let imageCount = 0;
     let videoCount = 0;
     const previews = [];
