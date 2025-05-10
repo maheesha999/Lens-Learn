@@ -25,7 +25,7 @@ function MyAllPost() {
   const [followedUsers, setFollowedUsers] = useState([]); // State to track followed users
   const [newComment, setNewComment] = useState({}); // State for new comments
   const [editingComment, setEditingComment] = useState({}); // State for editing comments
-  const [searchQuery, setSearchQuery] = useState(''); // State for search query
+  const [searchQuery, setSearchQuery] = useState(''); // State for a search query
   const navigate = useNavigate();
   const loggedInUserID = localStorage.getItem('userID'); // Get the logged-in user's ID
 
