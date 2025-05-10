@@ -36,7 +36,7 @@ function AllPost() {
       try {
         const response = await axios.get('http://localhost:8080/posts');
         setPosts(response.data);
-        setFilteredPosts(response.data); 
+        setFilteredPosts(response.data); // Initially show all posts
 
         // Fetch post owners' names
         const userIDs = [...new Set(response.data.map((post) => post.userID))]; // Get unique userIDs
