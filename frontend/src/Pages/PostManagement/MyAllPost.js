@@ -34,7 +34,7 @@ function MyAllPost() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get('http://localhost:8080/posts');
-        const userID = localStorage.getItem('userID'); 
+        const userID = localStorage.getItem('userID'); // Get the logged-in user's ID
 
         // Filter posts to include only those with the logged-in user's ID
         const userPosts = response.data.filter((post) => post.userID === userID);
