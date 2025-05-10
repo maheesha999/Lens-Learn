@@ -404,6 +404,5 @@ export default AllAchievements;
 //   position: absolute;
 //   top: 20px;
 //   right: 20px; 
-//   background-color: #FF6F61;
 
 
