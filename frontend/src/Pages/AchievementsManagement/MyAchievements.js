@@ -423,4 +423,3 @@ export default MyAchievements;
 // .media-modal {
 //   display: flex;
 //   justify-content: center;
-//   align-items: center;
