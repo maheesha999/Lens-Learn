@@ -278,7 +278,7 @@ function AllPost() {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
 
-    // Filter posts based on title, description, or category
+    
     const filtered = posts.filter(
       (post) =>
         post.title.toLowerCase().includes(query) ||
