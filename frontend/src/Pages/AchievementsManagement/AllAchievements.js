@@ -408,6 +408,3 @@ export default AllAchievements;
 //   color: #fff;
 //   border: none;
 //   border-radius: 50%;
-//   width: 40px;
-
-//   height: 40px;
