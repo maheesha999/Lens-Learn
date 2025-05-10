@@ -407,6 +407,5 @@ export default AddAchievements;
 // }
 // .gradient-overlay {
 //   position: absolute;
-//   left: 0;
 
   
