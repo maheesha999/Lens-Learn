@@ -111,7 +111,7 @@ function AllPost() {
 
   const handleMyPostsToggle = () => {
     if (showMyPosts) {
-      // Show all posts
+     
       setFilteredPosts(posts);
     } else {
       // Filter posts by logged-in user ID
