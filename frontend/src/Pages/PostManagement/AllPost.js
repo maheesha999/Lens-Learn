@@ -24,7 +24,7 @@ function AllPost() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMedia, setSelectedMedia] = useState(null);
   const [followedUsers, setFollowedUsers] = useState([]); // State to track followed users
-  const [newComment, setNewComment] = useState({}); // State for new comments
+  const [newComment, setNewComment] = useState({}); // State new comments
   const [editingComment, setEditingComment] = useState({}); // State for editing comments
   const [searchQuery, setSearchQuery] = useState(''); // State for search query
   const navigate = useNavigate();
