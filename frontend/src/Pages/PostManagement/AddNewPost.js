@@ -37,7 +37,7 @@ function AddNewPost() {
         // Validate video duration
         const video = document.createElement('video');
         video.preload = 'metadata';
-        video.src = URL.createObjectURL(file); //url
+        video.src = URL.createObjectURL(file); 
 
         video.onloadedmetadata = () => {
           URL.revokeObjectURL(video.src);
