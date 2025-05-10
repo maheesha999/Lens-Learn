@@ -404,6 +404,5 @@ export default AddAchievements;
 //this is the css file for the add achievements page
 // Add your CSS styles here
 // Add your CSS styles here
-// Add your CSS styles here
 
   
