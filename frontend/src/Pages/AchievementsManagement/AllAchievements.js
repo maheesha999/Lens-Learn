@@ -407,4 +407,4 @@ export default AllAchievements;
 //   background-color: #FF6F61;
 //   color: #fff;
 //   border: none;
-//   border-radius: 50%;
+
