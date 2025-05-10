@@ -400,6 +400,5 @@ export default AddAchievements;
 // .add-post-container {
 //   position: relative;
 
-//   min-height: 100vh;
 
   
