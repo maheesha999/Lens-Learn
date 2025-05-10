@@ -131,7 +131,7 @@ function AllPost() {
         params: { userID },
       });
 
-      // Update the specific post's likes in the state
+      
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId ? { ...post, likes: response.data.likes } : post
