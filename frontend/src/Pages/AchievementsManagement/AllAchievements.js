@@ -405,5 +405,5 @@ export default AllAchievements;
 //   top: 20px;
 //   right: 20px; 
 //   background-color: #FF6F61;
-//   color: #fff;
+
 
