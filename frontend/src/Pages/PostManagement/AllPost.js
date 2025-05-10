@@ -65,7 +65,7 @@ function AllPost() {
         }, {});
         console.log('Post Owners Map:', ownerMap); 
       } catch (error) {
-        console.error('Error fetching posts:', error); // Log error for fetching posts
+        console.error('Error fetching posts:', error); 
       }
     };
 
