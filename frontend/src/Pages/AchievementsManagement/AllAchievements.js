@@ -399,3 +399,15 @@ function AllAchievements() {
 export default AllAchievements;
 
 
+// CSS styles for the modal close button
+// .close-modal-btn {
+//   position: absolute;
+//   top: 20px;
+//   right: 20px; 
+//   background-color: #FF6F61;
+//   color: #fff;
+//   border: none;
+//   border-radius: 50%;
+//   width: 40px;
+
+//   height: 40px;
