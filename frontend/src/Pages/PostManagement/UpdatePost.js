@@ -11,7 +11,7 @@ function UpdatePost() {
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [existingMedia, setExistingMedia] = useState([]); 
-  const [newMedia, setNewMedia] = useState([]); // New media files to upload
+  const [newMedia, setNewMedia] = useState([]); 
   const [loading, setLoading] = useState(true); // Add loading state
   const [showMediaUploadInput, setShowMediaUploadInput] = useState(false);
   const [mediaPreviews, setMediaPreviews] = useState([]);
