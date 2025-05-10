@@ -63,8 +63,7 @@ function AllPost() {
           acc[owner.userID] = owner.fullName;
           return acc;
         }, {});
-        console.log('Post Owners Map:', ownerMap); // Debug log to verify postOwners map
-        setPostOwners(ownerMap);
+        console.log('Post Owners Map:', ownerMap); 
       } catch (error) {
         console.error('Error fetching posts:', error); // Log error for fetching posts
       }
