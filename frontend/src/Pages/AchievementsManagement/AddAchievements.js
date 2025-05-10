@@ -401,6 +401,5 @@ export default AddAchievements;
 //   position: relative;
 
 //   min-height: 100vh;
-//   background-color: #f9f9f9;
 
   
