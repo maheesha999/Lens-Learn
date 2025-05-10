@@ -9,7 +9,7 @@ function UpdateAchievements() {
     title: '',
     description: '',
     date: '',
-    category: '',
+    category: '',//category
     postOwnerID: '',
     postOwnerName: '',
     imageUrl: ''
