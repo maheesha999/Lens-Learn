@@ -397,3 +397,22 @@ function AddAchievements() {
 export default AddAchievements;
 
 //add achievements.css file
+// .add-post-container {
+//   position: relative;
+
+//   min-height: 100vh;
+//   background-color: #f9f9f9;
+//   padding-bottom: 50px;
+//   padding-top: 20px;
+// }
+// .gradient-overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8));
+//   z-index: 1;
+// }
+// .post-content-wrapper {
+  
