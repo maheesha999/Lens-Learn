@@ -27,7 +27,7 @@ function MyAllPost() {
   const [editingComment, setEditingComment] = useState({}); 
   const [searchQuery, setSearchQuery] = useState(''); 
   const navigate = useNavigate();
-  const loggedInUserID = localStorage.getItem('userID'); // Get the logged-in user's ID
+  const loggedInUserID = localStorage.getItem('userID'); 
 
   useEffect(() => {
     // Fetch all posts from the backend
