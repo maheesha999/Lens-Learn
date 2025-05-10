@@ -186,7 +186,7 @@ function AllPost() {
         content,
       });
 
-      // Update the specific post's comments in the state
+      
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId ? { ...post, comments: response.data.comments } : post
