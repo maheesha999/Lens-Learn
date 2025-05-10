@@ -9,7 +9,7 @@ function UpdatePost() {
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState(''); // New state for category
   const [existingMedia, setExistingMedia] = useState([]); // Initialize as an empty array
   const [newMedia, setNewMedia] = useState([]); // New media files to upload
   const [loading, setLoading] = useState(true); // Add loading state
