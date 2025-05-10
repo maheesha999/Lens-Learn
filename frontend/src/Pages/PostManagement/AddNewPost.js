@@ -132,7 +132,7 @@ function AddNewPost() {
     media.forEach((file) => formData.append('mediaFiles', file));
 
     try {
-      // Show loading state
+      
       document.getElementById('submit-button').disabled = true;
       document.getElementById('submit-button').innerText = 'Creating Post...';
       
