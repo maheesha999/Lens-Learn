@@ -412,6 +412,5 @@ export default AddAchievements;
 //   width: 100%;
 //   height: 100%;
 //   background: linear-gradient(135deg, rgba(65, 105, 225, 0.7), rgba(219, 112, 147, 0.8));
-//   z-index: 1;
-// }
+
   
